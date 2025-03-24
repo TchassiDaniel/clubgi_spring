@@ -30,7 +30,7 @@ public class MangaController {
   }
 
   @GetMapping("person/{id}")
-  public ResponseEntity<List<Manga>> findAllByPerson(int id) {
+  public ResponseEntity<List<Manga>> findAllByPerson(@PathVariable int id) {
     return ResponseEntity.ok(this.mangaService.findAllByPerson(id));
   }
 
