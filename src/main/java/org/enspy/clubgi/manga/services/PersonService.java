@@ -5,10 +5,11 @@ import org.enspy.clubgi.manga.models.Person;
 import org.enspy.clubgi.manga.repositories.PersonRepository;
 import org.springframework.stereotype.Service;
 
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class PersonService {
   private PersonRepository personRepository;
 
