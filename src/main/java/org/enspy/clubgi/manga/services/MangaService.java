@@ -27,8 +27,6 @@ public class MangaService {
     manga.setImageUrl(mangaRequestDTO.getImageUrl());
 
     Optional<Person> optionalPerson = this.personRepository.findById(mangaRequestDTO.getPersonId());
-    if (optionalPerson.isEmpty())
-      return null;
 
     Person person = optionalPerson.get();
     manga.setPerson(person);
